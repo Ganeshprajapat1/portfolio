@@ -1,15 +1,12 @@
-// import Navbar from "../common/Navbar/Navbar";
-// import Home from "../../pages/Home";
+import Navbar from "../Navbar/Navbar.jsx";
+import Home from "../../pages/Home/Home.jsx";
 // import Footer from "../footer/Footer";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <>
-      {/* <Navbar />
-      <main>
-        <Home />
-      </main>
-      <Footer /> */}
+      <Navbar />
+      <main>{children}</main>
     </>
   );
 };

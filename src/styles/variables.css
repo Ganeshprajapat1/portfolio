@@ -2,28 +2,61 @@
 
   /* Colors */
 
-  --primary-color: #6C63FF;
-  --secondary-color: #9D4EDD;
+  --primary-color: #7c3aed;
+  --primary-hover: #6d28d9;
 
-  --background-color: #0F172A;
-  --surface-color: #1E293B;
+  --secondary-color: #a855f7;
 
-  --text-primary: #FFFFFF;
-  --text-secondary: #CBD5E1;
+  --background-color: #0b1120;
+  --surface-color: #111827;
+  --card-color: #1f2937;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
 
   --border-color: #334155;
+
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
 
   /* Container */
 
   --container-width: 1200px;
+  --section-padding: 100px;
 
-  /* Radius */
+  /* Border Radius */
 
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
 
   /* Transition */
 
-  --transition: .3s ease;
+  --transition-fast: 0.2s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Box Shadow */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+  /* Spacing */
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  /* Z-Index */
+
+  --z-navbar: 1000;
+  --z-modal: 1100;
+  --z-loader: 1200;
 }
