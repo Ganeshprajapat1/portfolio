@@ -1,5 +1,7 @@
 import "./Navbar.css";
 
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
@@ -16,6 +18,10 @@ const Navbar = () => {
 
         <button className="navbar__cta">
           Let's Talk
+        </button>
+
+        <button className="navbar__menu-btn" aria-label="Open menu">
+            <HiOutlineMenuAlt3 />
         </button>
       </div>
     </header>

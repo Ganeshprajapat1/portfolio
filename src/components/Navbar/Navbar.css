@@ -37,3 +37,30 @@
   padding: 12px 24px;
   cursor: pointer;
 }
+
+.navbar__menu-btn {
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+
+  .navbar__nav,
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+
+    font-size: 2rem;
+    color: var(--text-primary);
+
+    cursor: pointer;
+  }
+}
