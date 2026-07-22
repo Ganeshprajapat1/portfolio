@@ -1,0 +1,1 @@
+// Firebase configuration will be added after creating the Firebase project.
