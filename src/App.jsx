@@ -4,7 +4,7 @@ import Layout from './components/Layout/Layout';
 const App = () => {
   return(
     <Layout>
-      <h1>Portfolio</h1>
+      {/* <h1>Portfolio</h1> */}
     </Layout>
   );
 }

@@ -1,62 +1,84 @@
 :root {
+  /* ===== COLORS ===== */
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
 
-  /* Colors */
-
-  --primary-color: #7c3aed;
-  --primary-hover: #6d28d9;
-
-  --secondary-color: #a855f7;
-
-  --background-color: #0b1120;
+  --background-color: #0b1020;
   --surface-color: #111827;
-  --card-color: #1f2937;
+  --card-color: #1a2235;
 
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dark: #0F1115;
 
-  --border-color: #334155;
+  --border-color: rgba(255, 255, 255, 0.08);
 
-  --success-color: #22c55e;
-  --warning-color: #f59e0b;
-  --error-color: #ef4444;
+  /* ===== GLASS ===== */
+  --glass-bg: rgba(15, 23, 42, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(12px);
 
-  /* Container */
+  /* ===== TYPOGRAPHY ===== */
+  --font-family: "Inter", sans-serif;
 
-  --container-width: 1200px;
-  --section-padding: 100px;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 2rem;
+  --fs-4xl: 3rem;
+  --fs-5xl: 4rem;
 
-  /* Border Radius */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 
+  /* ===== SPACING ===== */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* ===== BORDER RADIUS ===== */
   --radius-sm: 8px;
   --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
   --radius-full: 999px;
 
-  /* Transition */
+  /* ===== SHADOWS ===== */
+  --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.25);
 
+  /* ===== LAYOUT ===== */
+  --container-width: 1200px;
+  --navbar-height: 80px;
+
+  /* ===== TRANSITIONS ===== */
   --transition-fast: 0.2s ease;
-  --transition: 0.3s ease;
+  --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
 
-  /* Box Shadow */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.35);
-
-  /* Spacing */
-
-  --space-xs: 8px;
-  --space-sm: 16px;
-  --space-md: 24px;
-  --space-lg: 32px;
-  --space-xl: 48px;
-  --space-2xl: 64px;
-  --space-3xl: 96px;
-
-  /* Z-Index */
-
+  /* ===== Z-INDEX ===== */
   --z-navbar: 1000;
-  --z-modal: 1100;
-  --z-loader: 1200;
+  --z-menu: 1100;
+  --z-modal: 1200;
+
+  /* Navbar */
+  --navbar-width: 1200px;
+  --navbar-height: 80px;
+  --navbar-radius: 999px;
+  
+  --navbar-bg: rgba(15, 23, 42, 0.75);
+  --navbar-border: rgba(255, 255, 255, 0.08);
+  --navbar-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
