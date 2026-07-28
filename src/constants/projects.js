@@ -44,8 +44,8 @@ export const PROJECTS = [
       "GitHub",
       "Responsive Design",
     ],
-    github: "https://github.com/yourusername/react-chat-app",
-    live: "https://your-live-demo.vercel.app",
+    github: "/",
+    live: "/",
   },
   {
     id: 3,
@@ -69,8 +69,8 @@ export const PROJECTS = [
       "Git",
       "GitHub"
     ],
-    github: "https://github.com/ganeshprajapat1/AstroMystic",
-    live: "https://your-vercel-url.vercel.app",
+    github: "https://github.com/Ganeshprajapat1/astro-mystic",
+    live: "https://astro-mystic-six.vercel.app",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ export const PROJECTS = [
       "Bootstrap",
       "React Router",
     ],
-    github: "https://github.com/yourusername/online-nursery-store",
-    live: "",
+    github: "https://github.com/Ganeshprajapat1/online-nursery-store",
+    live: "/",
   },
 ];
