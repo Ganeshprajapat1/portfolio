@@ -1,12 +1,12 @@
 import Navbar from "../Navbar/Navbar.jsx";
-import Home from "../../pages/Home/Home.jsx";
-// import Footer from "../footer/Footer";
+import Footer from "../Footer/Footer.jsx";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };
