@@ -1,0 +1,129 @@
+   /* Skills */
+
+
+.skills__container {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+   /* Category */
+
+.skills-category {
+  background: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: var(--transition-normal);
+}
+
+.skills-category:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.skills-category__title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.skills-category__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.skills-category__icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: var(--radius-md);
+
+  background: rgba(99, 102, 241, 0.15);
+  color: var(--primary-color);
+
+  font-size: 1.4rem;
+}
+
+.skills-category__title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.skills-category__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--space-md);
+}
+
+   /* Skill Card */
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+
+  padding: var(--space-md);
+
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+
+  transition: var(--transition-normal);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+}
+
+.skill-card__icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(99, 102, 241, 0.15);
+
+  color: var(--primary-color);
+
+  border-radius: var(--radius-md);
+
+  font-size: 1.5rem;
+
+  flex-shrink: 0;
+}
+
+.skill-card__title {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+
+   /* Responsive */
+
+@media (max-width: 768px) {
+  .skills-category {
+    padding: var(--space-lg);
+  }
+
+  .skills-category__grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .skill-card__icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.3rem;
+  }
+}

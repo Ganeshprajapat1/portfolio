@@ -1,12 +1,13 @@
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
+import Skills from "../../components/Skills/Skills";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <About />
-      <section>Skills</section>
+      <Skills />
       <section>Experience</section>
       <section>Projects</section>
       <section>Education</section>
