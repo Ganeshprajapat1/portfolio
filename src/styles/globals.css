@@ -22,3 +22,26 @@ a{
 ul{
     list-style:none;
 }
+
+
+   /* Utilities */
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 100%;
+}

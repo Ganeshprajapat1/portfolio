@@ -1,0 +1,12 @@
+ /* Container */
+
+.container {
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+ /* Section */
+
+.section {
+  padding: 6rem 0;
+}
