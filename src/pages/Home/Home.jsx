@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
 import Skills from "../../components/Skills/Skills";
+import Projects from "../../components/Projects/Projects";
 
 const Home = () => {
   return (
@@ -8,8 +9,8 @@ const Home = () => {
       <Hero />
       <About />
       <Skills />
+      <Projects />
       <section>Experience</section>
-      <section>Projects</section>
       <section>Education</section>
       <section>Contact</section>
     </>

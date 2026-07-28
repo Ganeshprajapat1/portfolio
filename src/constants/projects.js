@@ -1,0 +1,92 @@
+import timeTrackingImg from "../assets/images/projects/time-tracking.png";
+import reactChatImg from "../assets/images/projects/react-chat.png";
+import astroMysticImg from "../assets/images/projects/astromystic.png";
+import nurseryStoreImg from "../assets/images/projects/nursery-store.png";
+
+export const PROJECTS = [
+  {
+    id: 1,
+    title: "Time Tracking App",
+    type: "College Project",
+    description: "A full-stack MERN Time Tracking application with secure JWT authentication, role-based dashboards (Admin, Project Manager, Developer), project and task management, work hour tracking, reporting, and billing features.",
+    image: timeTrackingImg,
+    technologies: [
+      "React.js",
+      "Redux Toolkit",
+      "JavaScript (ES6+)",
+      "CSS3",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Axios",
+      "React Router",
+      "Vite"
+    ],
+    github: "https://github.com/Ganeshprajapat1/-Time-Tracking-App",
+    live: "https://time-tracking-app-git-main-ganeshprajapat1s-projects.vercel.app",
+  },
+  {
+    id: 2,
+    title: "React Chat App",
+    type: "Internship Project",
+    description: "A modern real-time chat application built with React and Firebase. It features secure authentication, real-time messaging, image sharing, typing indicators, message seen status, infinite scrolling, profile management, and WhatsApp-inspired chat interactions. The application is fully responsive and optimized for both desktop and mobile devices.",
+    image: reactChatImg,
+    technologies: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "CSS3",
+      "Redux Toolkit",
+      "React Router DOM",
+      "Firebase",
+      "Firebase Cloud Messaging (FCM)",
+      "Git",
+      "GitHub",
+      "Responsive Design",
+    ],
+    github: "https://github.com/yourusername/react-chat-app",
+    live: "https://your-live-demo.vercel.app",
+  },
+  {
+    id: 3,
+    title: "AstroMystic",
+    type: "Personal Project",
+    description: "AstroMystic is a responsive horoscope web application built with React.js. Users can view daily, weekly, and monthly horoscope predictions for all zodiac signs with multilingual support (English, Hindi, and Gujarati). The project uses Redux Toolkit for state management, Axios for API integration, Google Translate API for translations, and is deployed on Vercel using Serverless Functions.",
+    image: astroMysticImg,
+    technologies: [
+      "React.js",
+      "Redux Toolkit",
+      "React Router DOM",
+      "Axios",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Vite",
+      "Google Translate API",
+      "REST API",
+      "Vercel",
+      "Serverless Functions",
+      "Git",
+      "GitHub"
+    ],
+    github: "https://github.com/ganeshprajapat1/AstroMystic",
+    live: "https://your-vercel-url.vercel.app",
+  },
+  {
+    id: 4,
+    title: "Online Nursery Store",
+    type: "College Project",
+    description: "A responsive online nursery store built with React.js that allows users to browse plants and gardening products, search items, view detailed product information, manage a shopping cart, and explore garden customization services. The application features a modern UI with product categories, authentication pages, and an admin dashboard interface for managing products, orders, and users.",
+    image: nurseryStoreImg, 
+    technologies: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "React Router",
+    ],
+    github: "https://github.com/yourusername/online-nursery-store",
+    live: "",
+  },
+];

@@ -36,3 +36,13 @@
 .btn--secondary:hover {
   background: var(--surface-color);
 }
+
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__text {
+  display: inline-block;
+}

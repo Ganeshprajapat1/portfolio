@@ -7,16 +7,27 @@ const Button = ({
   target = "_self",
   rel,
   onClick,
+  className = "",
+  icon,
 }) => {
+  const classes = `btn btn--${variant} ${className}`.trim();
+
+  const content = (
+    <>
+      {icon && <span className="btn__icon">{icon}</span>}
+      <span className="btn__text">{children}</span>
+    </>
+  );
+
   if (href) {
     return (
       <a
         href={href}
         target={target}
         rel={rel}
-        className={`btn btn--${variant}`}
+        className={classes}
       >
-        {children}
+        {content}
       </a>
     );
   }
@@ -24,10 +35,10 @@ const Button = ({
   return (
     <button
       type="button"
-      className={`btn btn--${variant}`}
+      className={classes}
       onClick={onClick}
     >
-      {children}
+      {content}
     </button>
   );
 };
