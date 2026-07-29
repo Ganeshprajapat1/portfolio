@@ -1,8 +1,12 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 import Button from "../Common/Button/Button";
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,18 +21,38 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // EmailJS integration will be added here later.
-    console.log(formData);
+    setLoading(true);
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      toast.success("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -100,9 +124,8 @@ const ContactForm = () => {
           required
         />
       </div>
-
-      <Button type="submit">
-        Send Message
+      <Button type="submit" disabled={loading}>
+        {loading ? "Sending..." : "Send Message"}
       </Button>
     </form>
   );

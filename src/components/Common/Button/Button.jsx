@@ -9,6 +9,9 @@ const Button = ({
   onClick,
   className = "",
   icon,
+  type = "button",
+  disabled = false,
+  ...props
 }) => {
   const classes = `btn btn--${variant} ${className}`.trim();
 
@@ -26,6 +29,7 @@ const Button = ({
         target={target}
         rel={rel}
         className={classes}
+        {...props}
       >
         {content}
       </a>
@@ -34,9 +38,11 @@ const Button = ({
 
   return (
     <button
-      type="button"
+      type={type}
       className={classes}
       onClick={onClick}
+      disabled={disabled}
+      {...props}
     >
       {content}
     </button>
