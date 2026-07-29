@@ -13,15 +13,18 @@ export const ABOUT_CONTENT = {
 
   stats: [
     {
-      number: "2+",
+      number: 2,
+      suffix: "+",
       label: "Internships",
     },
     {
-      number: "4+",
+      number: 4,
+      suffix: "+",
       label: "Projects",
     },
     {
-      number: "15+",
+      number: 15,
+      suffix: "+",
       label: "Technologies",
     },
   ],
