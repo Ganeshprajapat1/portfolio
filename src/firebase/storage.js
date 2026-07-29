@@ -1,1 +1,0 @@
-// Firebase Storage helper functions will be added later.
