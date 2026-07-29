@@ -27,27 +27,41 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
+  
+    let ticking = false;
+  
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollY = window.scrollY + 150;
+        
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+          
+            if (
+              scrollY >= sectionTop &&
+              scrollY < sectionTop + sectionHeight
+            ) {
+              setActiveSection(section.id);
+            }
+          });
+        
+          ticking = false;
         });
-      },
-      {
-        threshold: 0.4,
+      
+        ticking = true;
       }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
     };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    handleScroll();
+  
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
     

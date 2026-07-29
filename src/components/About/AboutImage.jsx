@@ -8,6 +8,7 @@ const AboutImage = () => {
           src={profileImage}
           alt="Ganesh Prajapat"
           loading="lazy"
+          decoding="async"
         />
       </div>
     </div>

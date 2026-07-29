@@ -35,7 +35,7 @@ const Footer = () => {
 
         <div className="footer__socials">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Ganeshprajapat1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -44,7 +44,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/ganesh-prajapat-5b6a68257"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="mailto:yourmail@gmail.com"
+            href="mailto:prajapatganesh129@gmail.com"
             aria-label="Email"
           >
             <FaEnvelope />

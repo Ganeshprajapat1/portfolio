@@ -8,6 +8,7 @@ const HeroButtons = () => {
       className="hero__buttons"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{
         delay: 0.8,
         duration: 0.6,

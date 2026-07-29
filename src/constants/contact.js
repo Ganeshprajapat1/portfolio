@@ -31,14 +31,14 @@ export const CONTACT_INFO = [
     id: 4,
     icon: FaLinkedin,
     title: "LinkedIn",
-    value: "linkedin.com/in/yourprofile",
+    value: "linkedin.com/in/ganesh-prajapat-5b6a68257",
     link: "https://linkedin.com/in/ganesh-prajapat-5b6a68257",
   },
   {
     id: 5,
     icon: FaGithub,
     title: "GitHub",
-    value: "github.com/yourusername",
+    value: "github.com/Ganeshprajapat1",
     link: "https://github.com/Ganeshprajapat1",
   },
 ];

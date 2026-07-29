@@ -6,6 +6,10 @@
   margin-top: var(--space-3xl);
 }
 
+.section {
+  scroll-margin-top: 100px;
+}
+
 .section__description {
   max-width: 700px;
   margin: var(--space-md) auto 0;
