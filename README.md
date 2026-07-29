@@ -1,16 +1,136 @@
-# React + Vite
+# Hi, I'm Ganesh Prajapat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project represents my journey as a React.js and MERN Stack Developer. It showcases my skills, projects, experience, and provides an easy way to connect with me.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://ganeshprajapat.vercel.app
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/Ganeshprajapat1/portfolio
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## About This Project
+
+I built this portfolio to create a clean and professional online presence. My goal was to design a fast, responsive, and modern website that reflects my work and development skills while keeping the user experience simple and engaging.
+
+This portfolio includes:
+
+- Hero section with introduction
+- About Me
+- Technical Skills
+- Featured Projects
+- Experience
+- Education
+- Contact Form (EmailJS)
+- Fully Responsive Design
+- Smooth Animations
+
+---
+
+## Built With
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Libraries
+
+- React Icons
+- Framer Motion
+- EmailJS
+- React Hot Toast
+
+### Deployment
+
+- Vercel
+
+---
+
+## Project Structure
+
+```text
+src/
+│
+├── assets/
+├── components/
+├── constants/
+├── layout/
+├── pages/
+├── styles/
+├── App.jsx
+└── main.jsx
+
+public/
+└── Ganesh_Prajapat_Resume.pdf
+```
+
+---
+
+## Features
+
+- Modern UI Design
+- Mobile Responsive
+- Smooth Scrolling Navigation
+- Animated Sections
+- Download Resume
+- Contact Form with EmailJS
+- Social Media Links
+- Optimized Performance
+- Clean Code Structure
+
+## Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+VITE_EMAILJS_SERVICE_ID=YOUR_SERVICE_ID
+VITE_EMAILJS_TEMPLATE_ID=YOUR_TEMPLATE_ID
+VITE_EMAILJS_PUBLIC_KEY=YOUR_PUBLIC_KEY
+```
+
+---
+
+## Contact
+
+If you'd like to collaborate, discuss opportunities, or simply say hello, feel free to reach out.
+
+Email: prajapatganesh129@gmail.com
+
+LinkedIn: https://linkedin.com/in/ganesh-prajapat-5b6a68257
+
+GitHub: https://github.com/Ganeshprajapat1
+
+---
+
+## Future Improvements
+
+- Dark/Light Theme Toggle
+- Blog Section
+- Project Filtering
+- Multi-language Support
+- Admin Panel for Content Management
+
+---
+
+## Acknowledgements
+
+Thanks to the amazing open-source community and all the developers whose tutorials, articles, and projects have helped me learn and grow throughout my development journey.
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
+
+---
+
+If you like this project, consider giving it a star on GitHub. It motivates me to keep learning and building better projects.
+
+Thank you for visiting my portfolio!
