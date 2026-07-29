@@ -1,11 +1,11 @@
 import "./Navbar.css";
 import { useEffect, useState } from "react";
 
-
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 
 import MobileMenu from "./MobileMenu";
 import NavLinks from "./NavLinks";
+import logo from "../../assets/icons/G_logo.png";
 
 
 const Navbar = () => {
@@ -68,18 +68,31 @@ const Navbar = () => {
   return (
     <header className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
       <div className="container navbar__container">
-        <div className="navbar__logo">
-          Ganesh Prajapat
-        </div>
-
+        <a
+          href="#hero"
+          className="navbar__logo"
+          aria-label="Go to Hero"
+          onClick={(e) => {
+            e.preventDefault();
+          
+            document.querySelector("#hero")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+        >
+          <img
+            src={logo}
+            alt="Ganesh Prajapat Logo"
+            className="navbar__logo-img"
+          />
+        </a>
         <nav className="navbar__nav">
           <NavLinks activeSection={activeSection} />
-        </nav>
-
+        </nav>  
         <a href="#contact" className="navbar__cta">
           Let's Talk
-        </a>
-
+        </a>  
         <button
           className="navbar__menu-btn"
           onClick={() => setIsMenuOpen(!isMenuOpen)}

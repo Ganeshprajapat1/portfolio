@@ -2,15 +2,7 @@ import "./Footer.css";
 
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from "react-icons/fa";
 
-const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
-];
+import { NAV_LINKS } from "../../constants/navigation";
 
 const Footer = () => {
   return (
@@ -26,7 +18,7 @@ const Footer = () => {
         </div>
 
         <nav className="footer__nav">
-          {navLinks.map((link) => (
+          {NAV_LINKS.map((link) => (
             <a key={link.label} href={link.href} className="footer__link">
               {link.label}
             </a>

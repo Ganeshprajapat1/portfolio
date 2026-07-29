@@ -50,15 +50,35 @@
 ========================== */
 
 .navbar__logo {
-  font-size: 1.5rem;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  color: var(--text-primary);
+  cursor: pointer;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
 }
 
-.navbar__logo,
-.navbar__cta {
-  flex-shrink: 0;
+.navbar__logo-img {
+  width: 104px;
+  height: 104px;
+
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.navbar__logo:hover .navbar__logo-img {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .navbar__logo-img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 /* ==========================
