@@ -1,5 +1,5 @@
 import { ABOUT_CONTENT } from "../../constants/about";
-import AnimatedCounter from "../common/AnimatedCounter";
+import AnimatedCounter from "../Common/AnimatedCounter";
 
 import { useRef } from "react";
 import { useInView } from "framer-motion";
