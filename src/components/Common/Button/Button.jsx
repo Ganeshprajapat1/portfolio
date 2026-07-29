@@ -6,6 +6,7 @@ const Button = ({
   href,
   target = "_self",
   rel,
+  download = false,
   onClick,
   className = "",
   icon,
@@ -28,6 +29,7 @@ const Button = ({
         href={href}
         target={target}
         rel={rel}
+        download={download}
         className={classes}
         {...props}
       >

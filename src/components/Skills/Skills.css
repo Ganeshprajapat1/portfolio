@@ -105,7 +105,7 @@
 }
 
 .skill-card__title {
-  font-size: var(--fs-base);
+  font-size: var(--fs-sm);
   font-weight: var(--fw-semibold);
   color: var(--text-primary);
 }
