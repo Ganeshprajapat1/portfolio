@@ -70,7 +70,7 @@ export const PROJECTS = [
       "GitHub"
     ],
     github: "https://github.com/Ganeshprajapat1/astro-mystic",
-    live: "https://astro-mystic-six.vercel.app",
+    live: "https://astro-mystic-withh-ganesh.vercel.app",
   },
   {
     id: 4,
