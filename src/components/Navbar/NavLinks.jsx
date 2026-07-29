@@ -1,16 +1,35 @@
-import { NAV_LINKS } from "../../constants/navbarData.js";
+import { NAV_LINKS } from "../../constants/navigation";
 
-const NavLinks = ({ onClick }) => {
+const NavLinks = ({ activeSection, onClick }) => {
+  const handleNavigation = (href) => {
+    const section = document.querySelector(href);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+
+    onClick?.();
+  };
+
   return (
     <>
       {NAV_LINKS.map((item) => (
-        <button
+        <a
           key={item.id}
-          className="navbar__link"
-          onClick={onClick}
+          href={item.href}
+          className={`navbar__link ${
+            activeSection === item.href.substring(1) ? "active" : ""
+          }`}
+          onClick={(e) => {
+            e.preventDefault();
+            handleNavigation(item.href);
+          }}
         >
           {item.label}
-        </button>
+        </a>
       ))}
     </>
   );

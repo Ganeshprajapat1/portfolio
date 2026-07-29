@@ -10,6 +10,8 @@ import NavLinks from "./NavLinks";
 
 const Navbar = () => {
 
+  const [activeSection, setActiveSection] = useState("hero");
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,6 +27,28 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
     
   return (
@@ -35,12 +59,12 @@ const Navbar = () => {
         </div>
 
         <nav className="navbar__nav">
-          <NavLinks />
+          <NavLinks activeSection={activeSection} />
         </nav>
 
-        <button className="navbar__cta">
+        <a href="#contact" className="navbar__cta">
           Let's Talk
-        </button>
+        </a>
 
         <button
           className="navbar__menu-btn"
@@ -49,9 +73,10 @@ const Navbar = () => {
         >
           {isMenuOpen ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
         </button>
-        <MobileMenu
-            isOpen={isMenuOpen}
-            onClose={() => setIsMenuOpen(false)}
+        <MobileMenu 
+          isOpen={isMenuOpen}
+          onClose={() => setIsMenuOpen(false)}
+          activeSection={activeSection}
         />
       </div>
     </header>

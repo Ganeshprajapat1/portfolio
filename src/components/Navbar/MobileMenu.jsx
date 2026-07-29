@@ -1,14 +1,18 @@
 import NavLinks from "./NavLinks";
 
-const MobileMenu = ({ isOpen, onClose }) => {
+const MobileMenu = ({ isOpen, onClose, activeSection, }) => {
   return (
     <div className={`mobile-menu ${isOpen ? "mobile-menu--open" : ""}`}>
       <nav className="mobile-menu__nav">
-        <NavLinks onClick={onClose} />
+        <NavLinks 
+          activeSection={activeSection}
+          onClick={onClose}
+        />
 
-        <button className="mobile-menu__cta">
+        <a href="#contact" className="mobile-menu__cta" onClick={onClose}>
           Let's Talk
-        </button>
+        </a>
+
       </nav>
     </div>
   );
