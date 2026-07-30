@@ -5,6 +5,8 @@ import toast from "react-hot-toast";
 import Button from "../Common/Button/Button";
 
 const ContactForm = () => {
+  console.log(import.meta.env);
+  console.log("PUBLIC:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -25,12 +27,15 @@ const ContactForm = () => {
     e.preventDefault();
 
     setLoading(true);
+    
 
     try {
       await emailjs.send(
+        
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
+
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
@@ -38,7 +43,6 @@ const ContactForm = () => {
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
-
       toast.success("Message sent successfully!");
 
       setFormData({
