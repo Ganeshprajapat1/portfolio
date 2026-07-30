@@ -5,7 +5,8 @@ import toast from "react-hot-toast";
 import Button from "../Common/Button/Button";
 
 const ContactForm = () => {
-  
+
+
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -51,7 +52,6 @@ const ContactForm = () => {
         message: "",
       });
     } catch (error) {
-      console.error(error);
       toast.error("Failed to send message. Please try again.");
     } finally {
       setLoading(false);
