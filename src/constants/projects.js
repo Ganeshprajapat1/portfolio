@@ -44,8 +44,8 @@ export const PROJECTS = [
       "GitHub",
       "Responsive Design",
     ],
-    github: "/",
-    live: "/",
+    github: "https://github.com/Ganeshprajapat1/react-chat-app",
+    live: "https://react-chat-app-by-ganesh.vercel.app",
   },
   {
     id: 3,
