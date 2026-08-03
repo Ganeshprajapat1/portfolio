@@ -16,6 +16,7 @@
   cursor: pointer;
 
   transition: var(--transition-normal);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn--primary {

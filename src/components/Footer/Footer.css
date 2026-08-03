@@ -163,3 +163,9 @@
   }
 
 }
+
+.footer__link,
+.footer__top-btn,
+.footer__socials {
+  -webkit-tap-highlight-color: transparent;
+}

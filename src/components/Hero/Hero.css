@@ -108,6 +108,7 @@
   font-size: 1.25rem;
 
   transition: var(--transition-normal);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hero__social-link:hover {

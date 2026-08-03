@@ -1,6 +1,4 @@
-/* ==========================
-   Navbar
-========================== */
+/* Navbar */
 
 .navbar {
   position: fixed;
@@ -45,9 +43,7 @@
   box-shadow: var(--navbar-shadow);
 }
 
-/* ==========================
-   Logo
-========================== */
+/* Logo */
 
 .navbar__logo {
   display: flex;
@@ -59,6 +55,7 @@
   text-decoration: none;
 
   flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar__logo-img {
@@ -81,9 +78,7 @@
   }
 }
 
-/* ==========================
-   Navigation
-========================== */
+/* Navigation */
 
 .navbar__nav {
   display: flex;
@@ -105,6 +100,7 @@
   font-weight: 500;
 
   transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar__link::after {
@@ -135,9 +131,7 @@
   color: var(--primary-color);
 }
 
-/* ==========================
-   CTA
-========================== */
+/* CTA */
 
 .navbar__cta {
   display: inline-flex;
@@ -172,9 +166,7 @@
   transform: translateY(0);
 }
 
-/* ==========================
-   Mobile Menu Button
-========================== */
+/* Mobile Menu Button */
 
 .navbar__menu-btn {
   display: none;
@@ -193,11 +185,10 @@
   font-size: 2rem;
 
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* ==========================
-   Mobile Menu
-========================== */
+/*  Mobile Menu */
 
 .mobile-menu {
   position: fixed;
@@ -277,6 +268,7 @@
   font-size: 1rem;
 
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu__cta:hover {
@@ -293,9 +285,7 @@
   filter: brightness(0.92);
 }
 
-/* ==========================
-   Responsive
-========================== */
+/* Responsive */
 
 @media (max-width: 1024px) {
 
